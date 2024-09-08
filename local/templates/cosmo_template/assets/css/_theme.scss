@@ -1,0 +1,301 @@
+@use "sass:math";
+
+//Functions 
+@function stripUnit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+
+@function vw($px, $media: 1440) {
+    @return #{math.div(stripUnit($px), stripUnit($media)) * 100}vw;
+}
+
+@function vwm($px, $media: 375) {
+    @return #{math.div(stripUnit($px), stripUnit($media)) * 100}vw;
+}
+
+
+// Переменные темы оформления
+$font-family: "Raleway", sans-serif;
+$font-family-secondary: "Actay", sans-serif;
+$base-heading-font-family: $font-family;
+
+//СOLORS
+//Main cosmo
+$cosmo-light: #F8EBE2;
+$cosmo-light-hover: #FFE8D8;
+$cosmo-accent: #F1BE9B;
+$cosmo-medium: #312A26;
+$cosmo-gray: #484443;
+$cosmo-dark: #121212;
+$cosmo-gradient: linear-gradient(180deg, #cebeb5 0%, #000 100%);
+$cosmo-gradient2: linear-gradient(180deg, #aa9184 0%, #000 100%);
+
+//gray
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-80: #1E1E1E;
+$color-black-70: #404040;
+$color-black-60: #696969;
+$color-gray: #8D8D8D;
+$color-gray-40: #C4C4C4;
+$color-gray-30: #E1E1E1;
+$color-gray-10: #F5F5F5;
+
+$color-video: #443A35;
+
+//state
+$state-focused: #0085FF;
+$state-success: #18BB6D;
+$state-error: #F62633;
+
+//Shadows
+$main-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+
+$font-color: $color-black;
+
+//Breakppoints
+@mixin media-max-m {
+	@media screen and (max-width: 992px) {
+		@content;
+	}
+}
+
+//Fonts
+@mixin base-fonts-settings($color, $font-family, $weight, $size, $line-height) {
+	color: $color;
+	font-family: $font-family;
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $line-height;
+}
+
+// Headings
+@mixin h-n-48($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(48px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+	}
+}
+
+@mixin h-n-32($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(32px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+		line-height: 150%;
+	}
+}
+
+@mixin h-n-32-l($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 300, vw(32px), 150%);
+	@include media-max-m {
+		font-size: vwm(16px);
+		line-height: 120%;
+	}
+}
+
+@mixin h-n-24($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(24px), 160%);
+	@include media-max-m {
+		font-size: vwm(20px);
+		line-height: 120%;
+	}
+}
+
+@mixin h-n-24-l($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 300, vw(24px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+	}
+}
+
+@mixin h-a-64($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(64px), 140%);
+	@include media-max-m {
+		font-size: vwm(32px);
+		line-height: 120%;
+	}
+}
+
+@mixin h-a-48($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(48px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+		line-height: 94%;
+	}
+}
+
+@mixin h-a-40($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(40px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+	}
+}
+
+//Text
+@mixin t-n-20($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(20px), 150%);
+	@include media-max-m {
+		font-size: vwm(20px);
+	}
+}
+
+@mixin t-n-20-l($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 300, vw(20px), 120%);
+	@include media-max-m {
+		font-size: vwm(20px);
+	}
+}
+
+@mixin t-n-18($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(18px), 160%);
+	@include media-max-m {
+		font-size: vwm(12px);
+		line-height: 110%;
+	}
+}
+
+@mixin t-n-16-b($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 700, vw(16px), 160%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-16($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(16px), 140%);
+	@include media-max-m {
+		font-size: vwm(16px);
+	}
+}
+
+@mixin t-n-16-r($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(16px), 160%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-16-l($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 300, vw(16px), 120%);
+	@include media-max-m {
+		font-size: vwm(14px);
+		line-height: 140%;
+	}
+}
+
+@mixin t-n-14-b($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 700, vw(14px), 160%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-14($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(14px), 140%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-14-r($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(14px), 160%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-14-l($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 300, vw(14px), 140%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-n-12($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(12px), 110%);
+	@include media-max-m {
+		font-size: vwm(12px);
+	}
+}
+
+@mixin t-n-10($color: $font-color) {
+	@include base-fonts-settings($color, $font-family, 400, vw(10px), 150%);
+	@include media-max-m {
+		font-size: vwm(10px);
+	}
+}
+
+@mixin t-a-20($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(20px), 120%);
+	@include media-max-m {
+		font-size: vwm(16px);
+        line-height: 160%;
+	}
+}
+
+@mixin t-a-16($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(16px), 140%);
+	@include media-max-m {
+		font-size: vwm(16px);
+	}
+}
+
+@mixin t-a-14($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(14px), 160%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-a-14-r($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(14px), 180%);
+	@include media-max-m {
+		font-size: vwm(14px);
+	}
+}
+
+@mixin t-a-12($color: $font-color) {
+	@include base-fonts-settings($color, $font-family-secondary, 400, vw(12px), 120%);
+	@include media-max-m {
+		font-size: vwm(12px);
+	}
+}
+
+:root {
+    --border-radius-6: #{vw(6px)};
+    --border-radius-8: #{vw(8px)};
+
+    @include media-max-m {
+        --border-radius-6: #{vwm(6px)};
+        --border-radius-8: #{vwm(8px)};
+    }
+}
+//spacing
+$spacing-4: vw(4px);
+$spacing-8: vw(8px);
+$spacing-12: vw(12px);
+$spacing-14: vw(14px);
+$spacing-16: vw(16px);
+$spacing-20: vw(20px);
+$spacing-24: vw(24px);
+$spacing-32: vw(32px);
+$spacing-40: vw(40px);
+$spacing-48: vw(48px);
+$spacing-56: vw(56px);
+$spacing-60: vw(60px);
+$spacing-64: vw(64px);
+$spacing-80: vw(80px);
+$spacing-88: vw(88px);
+
+$spacing-4-m: vwm(4px);
+$spacing-8-m: vwm(8px);
+$spacing-12-m: vwm(12px);
+$spacing-14-m: vwm(14px);
+$spacing-16-m: vwm(16px);
+$spacing-20-m: vwm(20px);
+$spacing-24-m: vwm(24px);
+$spacing-32-m: vwm(32px);
+$spacing-40-m: vwm(40px);
+$spacing-48-m: vwm(48px);
+$spacing-60-m: vwm(60px);
+$spacing-64-m: vwm(64px);

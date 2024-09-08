@@ -1,0 +1,295 @@
+.contacts {
+    margin-top: $spacing-40;
+
+    @include media-max-m {
+        margin-top: $spacing-32;
+    }
+
+    &-items {
+        background: $cosmo-gray;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $spacing-40;
+        padding: $spacing-32 $spacing-40;
+        border-radius: var(--border-radius-8);
+
+        @include media-max-m {
+            grid-template-columns: 1fr;
+            gap: $spacing-40-m;
+            padding: $spacing-24-m;
+        }
+    } 
+
+    &-item {
+        h2 {
+            @include h-a-48($cosmo-light);
+            margin-bottom: $spacing-40;
+
+            @include media-max-m {
+                margin-bottom: $spacing-24-m;
+            }
+        }
+
+        p {
+            @include h-n-24($cosmo-light);
+            
+            @include media-max-m {
+                font-size: vwm(18px);
+                line-height: 160%;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 $spacing-32;
+
+            @include media-max-m {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        a {
+            @include h-n-24($cosmo-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: $cosmo-accent;
+            }
+            
+            @include media-max-m {
+                font-size: vwm(18px);
+                line-height: 160%;
+
+                &:hover {
+                    color: $cosmo-light;
+                }
+
+                &:active {
+                    transition: all 0.1s ease;
+                    color: $cosmo-accent;
+                }
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+
+        @include media-max-m {
+            flex-direction: column;
+        }
+
+        &-selects {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: $spacing-24;
+            width: 100%;
+
+            @include media-max-m {
+                grid-template-columns: 1fr;
+                gap: $spacing-20-m;
+            }
+        }
+
+        &-btns {
+            display: flex;
+            flex-shrink: 0;
+            width: vw(255px);
+            margin-left: $spacing-24;
+
+            @include media-max-m {
+                width: 100%;
+                margin-left: 0;
+                margin-top: $spacing-20-m;
+            }
+        }
+
+        &-btn {
+            @include media-max-m {
+                width: 50%;
+            }
+        }
+
+        &-clear {
+            @include t-a-14($cosmo-dark);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: none;
+            width: vw(114px);
+            height: vw(48px);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            touch-action: none;
+
+            @include media-max-m {
+                height: vwm(48px);
+                width: 50%;
+            }
+
+            &:hover {
+                color: $cosmo-accent;
+            }
+        }
+    }
+}
+
+.contacts-dealers {
+    margin-top: $spacing-88;
+
+    @include media-max-m {
+        margin-top: $spacing-60-m;
+    }
+
+    h2 {
+        @include h-a-64($cosmo-light);
+        padding: 0 $spacing-40 $spacing-32 $spacing-40;
+
+        @include media-max-m {
+            padding: 0 0 $spacing-32-m 0;
+        }
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $spacing-24;
+        margin-top: $spacing-40;
+
+        @include media-max-m {
+            grid-template-columns: repeat(2, 1fr);
+            gap: $spacing-20-m;
+            margin-top: $spacing-40-m;
+        }
+    }
+
+    &-card {
+        &-block {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background: $cosmo-medium;
+            border-radius: var(--border-radius-8);
+            padding: $spacing-32 $spacing-40;
+            transition: background 0.3s ease;
+            height: 100%;
+    
+            &:hover {
+                background: $cosmo-dark;
+
+                .contacts-dealers-card-btn {
+                    background: $cosmo-accent;
+                }
+            }
+    
+            @include media-max-m {
+                padding: $spacing-24-m;
+    
+                &:hover {
+                    background: $cosmo-medium;
+                }
+            }
+        }
+
+        &-link {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            height: vw(48px);
+            object-fit: cover;
+
+            @include media-max-m {
+                height: vwm(30px);
+            }
+        }
+
+        h3 {
+            @include t-n-14-b($cosmo-light);
+            margin-top: $spacing-32;
+
+            @include media-max-m {
+                margin-top: $spacing-24-m;
+            }
+        }
+
+        p {
+            position: relative;
+            z-index: 2;
+            @include t-n-14-r($cosmo-light);
+            margin-top: $spacing-8;
+            margin-bottom: $spacing-32;
+
+            @include media-max-m {
+                font-size: vwm(10px);
+                margin-top: $spacing-8-m;
+                margin-bottom: $spacing-24-m;
+            }
+
+            a {
+                @include t-n-14-r($cosmo-light);
+                text-decoration: none;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $cosmo-accent;
+                }
+
+                @include media-max-m {
+                    font-size: vwm(10px);
+
+                    &:hover {
+                        color: $cosmo-light;
+                    }
+                }
+            }
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $cosmo-light;
+            width: vw(40px);
+            height: vw(40px);
+            margin-top: auto;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: $cosmo-accent;
+            }
+
+            @include media-max-m {
+                width: vwm(40px);
+                height: vwm(40px);
+                margin-top: auto;
+
+                &:hover {
+                    background: $cosmo-light;
+                }
+            }
+
+            svg {
+                width: vw(24px);
+                height: vw(24px);
+
+                @include media-max-m {
+                    width: vwm(24px);
+                    height: vwm(24px);
+                }
+            }
+        }
+    }
+}
