@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Контакты");
+$APPLICATION->SetTitle("Партнеры");
 ?>
     <div class="section-banner container">
         <div class="section-banner-wrapper">
@@ -8,46 +8,21 @@ $APPLICATION->SetTitle("Контакты");
                    src="<?= SITE_TEMPLATE_PATH ?>/assets/img/bg-video.mp4"></video>
             <div class="section-banner-block">
                 <p class="section-banner-name">COSMO</p>
-                <h2 class="section-banner-title">КОНТАКТЫ</h2>
-                <? $APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    array(
-                        "AREA_FILE_SHOW" => "file",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inf.php"
-                    )
-                ); ?>
+                <h2 class="section-banner-title">ПАРТНЕРСКАЯ СЕТЬ</h2>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/inf.php"
+                        )
+                    ); ?>
             </div>
         </div>
     </div>
 
-    <div class="contacts container" data-aos="fade-up">
-        <div class="contacts-items">
-            <div class="contacts-item">
-                <h2>ОФИС ПРОДАЖ</h2>
-                <p>ООО “Даззл”</p>
-                <p>Москва, ул. Дзержинского, 100</p>
-                <div class="">
-                    <a href="tel:8 800 000-00-00 ">8 800 000-00-00 </a>
-                    <a href="tel:+7 (495) 000-00-00">+7 (495) 000-00-00</a>
-                </div>
-                <a href="mailto:info@mail.ru">info@mail.ru</a>
-            </div>
-            <div class="contacts-item">
-                <h2>ПРОИЗВОДСТВО</h2>
-                <p>ООО “Даззл”</p>
-                <p>Москва, ул. Дзержинского, 100</p>
-                <div class="">
-                    <a href="tel:+7 (495) 000-00-00">+7 (495) 000-00-00</a>
-                </div>
-                <a href="mailto:info@mail.ru">info@mail.ru</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="contacts-dealers container" data-aos="fade-up">
-        <h2>ДИЛЕРСКАЯ СЕТЬ</h2>
+    <div class="partners small-margin-top container">
         <form class="contacts-form">
             <div class="contacts-form-selects">
                 <div class="select">
