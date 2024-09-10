@@ -384,7 +384,7 @@
             el.addEventListener('click', function(e) {
                 e.preventDefault();
                 selectText.innerText =  el.innerText;
-                selectInput.value =  el.innerText;
+                selectInput.value =  el.getAttribute('data-id');
                 select.classList.remove('active');
             })
         })
