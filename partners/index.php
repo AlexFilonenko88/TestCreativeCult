@@ -9,15 +9,15 @@ $APPLICATION->SetTitle("Партнеры");
             <div class="section-banner-block">
                 <p class="section-banner-name">COSMO</p>
                 <h2 class="section-banner-title">ПАРТНЕРСКАЯ СЕТЬ</h2>
-                    <? $APPLICATION->IncludeComponent(
-                        "bitrix:main.include",
-                        "",
-                        array(
-                            "AREA_FILE_SHOW" => "file",
-                            "EDIT_TEMPLATE" => "",
-                            "PATH" => "/include/inf.php"
-                        )
-                    ); ?>
+                <? $APPLICATION->IncludeComponent(
+                    "bitrix:main.include",
+                    "",
+                    array(
+                        "AREA_FILE_SHOW" => "file",
+                        "EDIT_TEMPLATE" => "",
+                        "PATH" => "/include/inf.php"
+                    )
+                ); ?>
             </div>
         </div>
     </div>
@@ -117,177 +117,63 @@ $APPLICATION->SetTitle("Партнеры");
                 <input type="button" value="СБРОС" class="contacts-form-clear">
             </div>
         </form>
-        <div class="contacts-dealers-items">
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://polairgroup.ru/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img1.svg" alt="POLAIR GROUP">
-                    <h3>POLAIR GROUP</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://polairgroup.ru/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://carboma.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img2.svg" alt="Carboma">
-                    <h3>Carboma</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://carboma.com/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://dazzlpro.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img3.svg" alt="DAZZL">
-                    <h3>DAZZL</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://dazzlpro.com/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://www.polair.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img4.svg" alt="POLAIR +">
-                    <h3>POLAIR +</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://www.polair.com/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://www.radaxovens.ru/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img5.svg" alt="Radax">
-                    <h3>Radax</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://www.radaxovens.ru/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://frost-eco.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img6.svg" alt="Frosteco">
-                    <h3>Frosteco</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://frost-eco.com/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://www.rada2000.ru/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img7.svg" alt="RADA">
-                    <h3>RADA</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://www.rada2000.ru/" target="_blank" rel="nofollow" class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="contacts-dealers-card" data-aos="fade-up">
-                <div class="contacts-dealers-card-block">
-                    <a href="https://www.polairmedcare.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-link"></a>
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/about-product-img8.svg" alt="POLAIR">
-                    <h3>POLAIR</h3>
-                    <p>
-                        117105, Москва, Варшавское шоссе, 26, БЦ Варшавская Плаза, офис 403
-                        <br>
-                        <a href="tel:+7 (499) 955-46-63">+7 (499) 955-46-63</a>
-                        <br><br>
-                        <a href="mailto:moscow@idsgroup.ru">moscow@idsgroup.ru</a>
-                    </p>
-                    <a href="https://www.polairmedcare.com/" target="_blank" rel="nofollow"
-                       class="contacts-dealers-card-btn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.036 7.44655L10.574 7.38299L12.1093 5.84777L16.608 5.8745L17.687 5.87603L17.7029 6.96941L17.7394 7.00587L17.7036 7.04165L17.7661 11.5046L16.2309 13.0398L16.1284 8.61685L6.96443 17.7808L5.83305 16.6495L15.036 7.44655Z"
-                                  fill="#404040"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:news.list",
+            "custom_partner",
+            array(
+                "ACTIVE_DATE_FORMAT" => "d.m.Y",
+                "ADD_SECTIONS_CHAIN" => "N",
+                "AJAX_MODE" => "N",
+                "AJAX_OPTION_ADDITIONAL" => "",
+                "AJAX_OPTION_HISTORY" => "N",
+                "AJAX_OPTION_JUMP" => "N",
+                "AJAX_OPTION_STYLE" => "Y",
+                "CACHE_FILTER" => "N",
+                "CACHE_GROUPS" => "Y",
+                "CACHE_TIME" => "36000000",
+                "CACHE_TYPE" => "A",
+                "CHECK_DATES" => "Y",
+                "COMPONENT_TEMPLATE" => "custom_partner",
+                "DETAIL_URL" => "",
+                "DISPLAY_BOTTOM_PAGER" => "Y",
+                "DISPLAY_DATE" => "Y",
+                "DISPLAY_NAME" => "Y",
+                "DISPLAY_PICTURE" => "Y",
+                "DISPLAY_PREVIEW_TEXT" => "Y",
+                "DISPLAY_TOP_PAGER" => "N",
+                "FIELD_CODE" => array(0 => "", 1 => "",),
+                "FILTER_NAME" => "",
+                "HIDE_LINK_WHEN_NO_DETAIL" => "N",
+                "IBLOCK_ID" => "5",
+                "IBLOCK_TYPE" => "partners",
+                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+                "INCLUDE_SUBSECTIONS" => "Y",
+                "MESSAGE_404" => "",
+                "NEWS_COUNT" => "20",
+                "PAGER_BASE_LINK_ENABLE" => "N",
+                "PAGER_DESC_NUMBERING" => "N",
+                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+                "PAGER_SHOW_ALL" => "N",
+                "PAGER_SHOW_ALWAYS" => "N",
+                "PAGER_TEMPLATE" => ".default",
+                "PAGER_TITLE" => "Новости",
+                "PARENT_SECTION" => "",
+                "PARENT_SECTION_CODE" => "",
+                "PREVIEW_TRUNCATE_LEN" => "",
+                "PROPERTY_CODE" => array(0 => "ADDRESS", 1 => "NAME_COMPANY", 2 => "LINK_PATH", 3 => "TELEPHONE", 4 => "EMAIL", 5 => "",),
+                "SET_BROWSER_TITLE" => "Y",
+                "SET_LAST_MODIFIED" => "N",
+                "SET_META_DESCRIPTION" => "N",
+                "SET_META_KEYWORDS" => "N",
+                "SET_STATUS_404" => "N",
+                "SET_TITLE" => "N",
+                "SHOW_404" => "N",
+                "SORT_BY1" => "ACTIVE_FROM",
+                "SORT_BY2" => "SORT",
+                "SORT_ORDER1" => "DESC",
+                "SORT_ORDER2" => "ASC",
+                "STRICT_SECTION_CHECK" => "N"
+            )
+        ); ?>
     </div>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
