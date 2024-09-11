@@ -4,20 +4,22 @@ $APPLICATION->SetTitle("Контакты");
 ?>
     <div class="section-banner container">
         <div class="section-banner-wrapper">
-            <video playsinline muted autoplay loop poster="<?= SITE_TEMPLATE_PATH ?>/assets/img/bg-video-picture.png"
-                   src="<?= SITE_TEMPLATE_PATH ?>/assets/img/bg-video.mp4"></video>
+            <video playsinline muted autoplay loop poster="<?= SITE_TEMPLATE_PATH ?>/img/bg-video-picture.png"
+                   src="<?= SITE_TEMPLATE_PATH ?>/img/bg-video.mp4"></video>
             <div class="section-banner-block">
                 <p class="section-banner-name">COSMO</p>
                 <h2 class="section-banner-title">КОНТАКТЫ</h2>
-                <? $APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    array(
-                        "AREA_FILE_SHOW" => "file",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/inf.php"
-                    )
-                ); ?>
+                <div class="section-banner-text">
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/templates/cosmo_template/include/inf.php"
+                        )
+                    ); ?>
+                </div>
             </div>
         </div>
     </div>

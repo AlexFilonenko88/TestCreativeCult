@@ -30,7 +30,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Поддержка", 
-		"/podderzhka/", 
+		"/support/", 
 		Array(), 
 		Array(), 
 		"" 
