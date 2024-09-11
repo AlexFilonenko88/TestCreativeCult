@@ -12,12 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<?php
-echo "<pre>";
-var_dump($APPLICATION->GetCurPage());
-echo "</pre>";
-?>
-?>
 <div class="section-banner container">
     <div class="section-banner-wrapper">
         <? if ($APPLICATION->GetCurPage() == "/contacts/" && $arResult["ITEMS"][2]["ID"] == "55"): ?>

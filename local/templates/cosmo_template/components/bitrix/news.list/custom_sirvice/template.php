@@ -13,6 +13,11 @@
 $this->setFrameMode(true);
 ?>
 
+
+</ul>
+</div>
+</div>
+<!--                                     -->
 <div class="contacts-dealers container" data-aos="fade-up">
     <h2>ДИЛЕРСКАЯ СЕТЬ</h2>
     <form class="contacts-form">
@@ -30,7 +35,7 @@ $this->setFrameMode(true);
                 <div class="select-drop">
                     <ul class="select-list">
                         <li class="select-item"><a href="#">Все услуги</a></li>
-<!--                                    -->
+                        <!--                                    -->
                         <? foreach ($arResult["ITEMS"] as $arItem): ?>
                             <?
                             $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -40,7 +45,4 @@ $this->setFrameMode(true);
                                                                                                         data-id="<?= $arItem["ID"] ?>"><?= $arItem["NAME"] ?></a>
                             </li>
                         <? endforeach; ?>
-<!--                                     -->
-                    </ul>
-                </div>
-            </div>
+
