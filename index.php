@@ -127,10 +127,7 @@ $APPLICATION->SetTitle("Cosmo");
                                 <h3>
                                     Вертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
@@ -146,10 +143,7 @@ $APPLICATION->SetTitle("Cosmo");
                                 <h3>
                                     Полувертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
@@ -165,10 +159,7 @@ $APPLICATION->SetTitle("Cosmo");
                                 <h3>
                                     Вертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
