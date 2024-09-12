@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("Партнеры");
 ?>
 <? $APPLICATION->IncludeComponent(
     "bitrix:news.list",
-    "common_block_partners",
+    "common_block",
     array(
         "ACTIVE_DATE_FORMAT" => "d.m.Y",
         "ADD_SECTIONS_CHAIN" => "N",
@@ -18,7 +18,7 @@ $APPLICATION->SetTitle("Партнеры");
         "CACHE_TIME" => "36000000",
         "CACHE_TYPE" => "A",
         "CHECK_DATES" => "Y",
-        "COMPONENT_TEMPLATE" => "common_block_partners",
+        "COMPONENT_TEMPLATE" => "common_block",
         "DETAIL_URL" => "",
         "DISPLAY_BOTTOM_PAGER" => "Y",
         "DISPLAY_DATE" => "N",

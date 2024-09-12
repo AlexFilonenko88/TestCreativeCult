@@ -18,8 +18,8 @@ $this->createFrame()->begin("Загрузка навигации");
 
     <? else: ?>
 
-        <div class="load_more">
-            Загружено все
+        <div class="support-bottom">
+            <div class="support-btn btn-secondary load_more">Загружено все</div>
         </div>
 
     <? endif ?>

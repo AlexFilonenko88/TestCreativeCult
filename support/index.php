@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Поддержка");
 
 <? $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"common_block_support", 
+	"common_block",
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("Поддержка");
 		"CACHE_TIME" => "36000000",
 		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
-		"COMPONENT_TEMPLATE" => "common_block_support",
+		"COMPONENT_TEMPLATE" => "common_block",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_DATE" => "N",
@@ -139,4 +139,5 @@ $APPLICATION->SetTitle("Поддержка");
     ),
     false
 ); ?>
+
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
