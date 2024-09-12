@@ -11,8 +11,15 @@ $this->createFrame()->begin("Загрузка навигации");
         $url = $arResult["sUrlPathParams"] . "PAGEN_" . $arResult["NavNum"] . "=" . $plus;
 
         ?>
+
         <div class="support-bottom">
             <button class="support-btn btn-secondary load_more" data-url="<?= $url ?>">Показать Ещё</button>
+        </div>
+
+    <? else: ?>
+
+        <div class="load_more">
+            Загружено все
         </div>
 
     <? endif ?>

@@ -12,16 +12,7 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-</ul>
-</div>
-</div>
-</div>
-<div class="contacts-form-btns">
-    <button type="submit" class="contacts-form-btn btn-primary">ПОКАЗАТЬ</button>
-    <input type="button" value="СБРОС" class="contacts-form-clear">
-</div>
-</form>
-<!--                   -->
+
 <div class="contacts-dealers-items">
     <? if ($arParams["DISPLAY_TOP_PAGER"]): ?>
         <?= $arResult["NAV_STRING"] ?><br/>
@@ -56,5 +47,4 @@ $this->setFrameMode(true);
         </div>
     <? endforeach; ?>
 </div>
-<!--         -->
 </div>
