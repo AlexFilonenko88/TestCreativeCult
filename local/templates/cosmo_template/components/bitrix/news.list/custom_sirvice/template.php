@@ -12,7 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-
 <? foreach ($arResult["ITEMS"] as $arItem): ?>
     <?
     $this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arItem["IBLOCK_ID"], "ELEMENT_EDIT"));
@@ -20,3 +19,4 @@ $this->setFrameMode(true);
     ?>
     <li class="select-item" id="<?= $this->GetEditAreaId($arItem['ID']); ?>"><a href="#" data-id="<?= $arItem["ID"] ?>"><?= $arItem["NAME"]?></a></li>
 <? endforeach; ?>
+

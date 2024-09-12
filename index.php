@@ -8,8 +8,8 @@ $APPLICATION->SetTitle("Cosmo");
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="main-banner-card">
-                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img1.png" alt="">
-                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img1-m.png" alt="">
+                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img1.png" alt="">
+                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img1-m.png" alt="">
                             <div class="main-banner-card-block">
                                 <h2 class="main-banner-card-title">ВИТРИНЫ KC71</h2>
                                 <p>В мире, где роскошь становится обязательством, Cosmo выделяется как идеальный выбор
@@ -24,8 +24,8 @@ $APPLICATION->SetTitle("Cosmo");
                     </div>
                     <div class="swiper-slide">
                         <div class="main-banner-card main-banner-card-second">
-                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img2.png" alt="">
-                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img2-m.png" alt="">
+                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img2.png" alt="">
+                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img2-m.png" alt="">
                             <div class="main-banner-card-block">
                                 <h2 class="main-banner-card-title">Полувертикальные KC2</h2>
                                 <p>В мире, где роскошь становится обязательством, Cosmo выделяется как идеальный выбор
@@ -40,8 +40,8 @@ $APPLICATION->SetTitle("Cosmo");
                     </div>
                     <div class="swiper-slide">
                         <div class="main-banner-card">
-                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img1.png" alt="">
-                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img1-m.png" alt="">
+                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img1.png" alt="">
+                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img1-m.png" alt="">
                             <div class="main-banner-card-block">
                                 <h2 class="main-banner-card-title">Полувертикальные KC45</h2>
                                 <p>В мире, где роскошь становится обязательством, Cosmo выделяется как идеальный выбор
@@ -56,8 +56,8 @@ $APPLICATION->SetTitle("Cosmo");
                     </div>
                     <div class="swiper-slide">
                         <div class="main-banner-card main-banner-card-second">
-                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img2.png" alt="">
-                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-banner-img2-m.png" alt="">
+                            <img class="main-banner-card-img" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img2.png" alt="">
+                            <img class="main-banner-card-img-m" src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-banner-img2-m.png" alt="">
                             <div class="main-banner-card-block">
                                 <h2 class="main-banner-card-title">ВИТРИНЫ KC72</h2>
                                 <p>В мире, где роскошь становится обязательством, Cosmo выделяется как идеальный выбор
@@ -74,10 +74,10 @@ $APPLICATION->SetTitle("Cosmo");
             </div>
             <div class="main-banner-btns">
                 <button class="main-banner-btn main-banner-btn-prev">
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/main-arrow-prev.svg" alt="" parse-svg>
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/icons/main-arrow-prev.svg" alt="" parse-svg>
                 </button>
                 <button class="main-banner-btn main-banner-btn-next">
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/main-arrow-next.svg" alt="" parse-svg>
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/icons/main-arrow-next.svg" alt="" parse-svg>
                 </button>
             </div>
             <div class="main-banner-pagination">
@@ -98,7 +98,7 @@ $APPLICATION->SetTitle("Cosmo");
             <li id="categories" class="main-content-item main-content-category active">
                 <div class="main-content-category-card" data-aos="fade-up">
                     <a href="/catalog.html">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-category-img1.png" alt="">
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-category-img1.png" alt="">
                         <div class="">
                             <h3>Вертикальные витрины</h3>
                             <a class="main-content-category-card-link" href="/catalog.html">Перейти в категорию</a>
@@ -107,7 +107,7 @@ $APPLICATION->SetTitle("Cosmo");
                 </div>
                 <div class="main-content-category-card" data-aos="fade-up">
                     <a href="/catalog.html">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-category-img2.png" alt="">
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-category-img2.png" alt="">
                         <div class="">
                             <h3>Полувертикальные витрины</h3>
                             <a class="main-content-category-card-link" href="/catalog.html">Перейти в категорию</a>
@@ -120,17 +120,14 @@ $APPLICATION->SetTitle("Cosmo");
                     <a href="/catalog.html">
                         <div class="main-content-models-card-wrapper">
                             <div class="main-content-models-card-block">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-model-img1.png" alt="">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-models-img-hover.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-model-img1.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-models-img-hover.png" alt="">
                             </div>
                             <div class="main-content-models-card-content">
                                 <h3>
                                     Вертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
@@ -139,17 +136,14 @@ $APPLICATION->SetTitle("Cosmo");
                     <a href="/catalog.html">
                         <div class="main-content-models-card-wrapper">
                             <div class="main-content-models-card-block">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-model-img2.png" alt="">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-models-img-hover.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-model-img2.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-models-img-hover.png" alt="">
                             </div>
                             <div class="main-content-models-card-content">
                                 <h3>
                                     Полувертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
@@ -158,17 +152,14 @@ $APPLICATION->SetTitle("Cosmo");
                     <a href="/catalog.html">
                         <div class="main-content-models-card-wrapper">
                             <div class="main-content-models-card-block">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-model-img1.png" alt="">
-                                <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-models-img-hover.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-model-img1.png" alt="">
+                                <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-models-img-hover.png" alt="">
                             </div>
                             <div class="main-content-models-card-content">
                                 <h3>
                                     Вертикальные витрины
                                 </h3>
-
                                 <a href="/catalog.html" class="main-content-models-card-link">Перейти в категорию</a>
-
-
                             </div>
                         </div>
                     </a>
@@ -186,7 +177,7 @@ $APPLICATION->SetTitle("Cosmo");
                         <a href="#">
                             <div class="main-projects-card-wrapper">
                                 <div class="main-projects-card-block">
-                                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-project-img1.png" alt="">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-project-img1.png" alt="">
                                 </div>
                                 <div class="main-projects-card-content">
                                     <p class="main-projects-card-text">Проекты с витринами KC71 (COSMO)</p>
@@ -205,7 +196,7 @@ $APPLICATION->SetTitle("Cosmo");
                         <a href="#">
                             <div class="main-projects-card-wrapper">
                                 <div class="main-projects-card-block">
-                                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/content/main-project-img2.jpg" alt="">
+                                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/content/main-project-img2.jpg" alt="">
                                 </div>
                                 <div class="main-projects-card-content">
                                     <p class="main-projects-card-text">Проекты с витринами KC71 (COSMO)</p>

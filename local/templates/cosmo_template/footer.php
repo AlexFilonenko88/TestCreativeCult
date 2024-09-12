@@ -4,24 +4,25 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 </main>
 <footer class="footer container">
     <div class="footer-wrapper">
-        <video playsinline muted autoplay loop poster="<?= SITE_TEMPLATE_PATH ?>/assets/img/bg-video-picture.png"
-               src="<?= SITE_TEMPLATE_PATH ?>/assets/img/bg-video.mp4"></video>
+        <video playsinline muted autoplay loop poster="<?= SITE_TEMPLATE_PATH ?>/img/bg-video-picture.png"
+               src="<?= SITE_TEMPLATE_PATH ?>/img/bg-video.mp4"></video>
         <div class="footer-top">
             <div class="footer-logo">
                 <a href="/">
-                    <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/logo.svg" alt="">
+                    <img src="<?= SITE_TEMPLATE_PATH ?>/img/logo.svg" alt="">
                 </a>
-                <? $APPLICATION->IncludeComponent(
-                    "bitrix:main.include",
-                    "",
-                    array(
-                        "AREA_FILE_SHOW" => "file",
-                        "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/cosmo_inc.php"
-                    )
-                ); ?>
+                <p>
+                    <? $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        array(
+                            "AREA_FILE_SHOW" => "file",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/local/templates/cosmo_template/include/cosmo_inc.php"
+                        )
+                    ); ?>
+                </p>
             </div>
-            <div class="footer-top-block">
                 <? $APPLICATION->IncludeComponent(
                     "bitrix:menu",
                     "custom_footer_menu",
@@ -40,25 +41,15 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
                     ),
                     false
                 ); ?>
-                <div class="footer-contacts-mobile">
-                    <img src="" alt="">
-                    <a href="#" target="_blank" rel="nofollow" class="footer-contact">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/tg-icon.svg" alt="" parse-svg>
-                    </a>
-                    <a href="#" target="_blank" rel="nofollow" class="footer-contact">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/vk-icon.svg" alt="" parse-svg>
-                    </a>
-                </div>
-            </div>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-block">
                 <div class="footer-contacts">
                     <a href="#" target="_blank" rel="nofollow" class="footer-contact">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/tg-icon.svg" alt="" parse-svg>
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/icons/tg-icon.svg" alt="" parse-svg>
                     </a>
                     <a href="#" target="_blank" rel="nofollow" class="footer-contact">
-                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/img/icons/vk-icon.svg" alt="" parse-svg>
+                        <img src="<?= SITE_TEMPLATE_PATH ?>/img/icons/vk-icon.svg" alt="" parse-svg>
                     </a>
                 </div>
                 <button class="btn-secondary popup-open" data-modal-id="modal1">Связаться с нами</button>
@@ -68,7 +59,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
                     array(
                         "AREA_FILE_SHOW" => "file",
                         "EDIT_TEMPLATE" => "",
-                        "PATH" => "/include/address.php"
+                        "PATH" => "/local/templates/cosmo_template/include/address.php"
                     )
                 ); ?>
             </div>
@@ -80,7 +71,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
                         array(
                             "AREA_FILE_SHOW" => "file",
                             "EDIT_TEMPLATE" => "",
-                            "PATH" => "/include/terms_use.php"
+                            "PATH" => "/local/templates/cosmo_template/include/terms_use.php"
                         )
                     ); ?>
                 </a>
@@ -91,7 +82,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
                         array(
                             "AREA_FILE_SHOW" => "file",
                             "EDIT_TEMPLATE" => "",
-                            "PATH" => "/include/privacy_policy.php"
+                            "PATH" => "/local/templates/cosmo_template/include/privacy_policy.php"
                         )
                     ); ?>
                 </a>

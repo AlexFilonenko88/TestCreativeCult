@@ -16,6 +16,12 @@ $this->createFrame()->begin("Загрузка навигации");
             <button class="support-btn btn-secondary load_more" data-url="<?= $url ?>">Показать Ещё</button>
         </div>
 
+    <? else: ?>
+
+        <div class="support-bottom">
+            <div class="support-btn btn-secondary load_more">Загружено все</div>
+        </div>
+
     <? endif ?>
 
 <? endif ?>
