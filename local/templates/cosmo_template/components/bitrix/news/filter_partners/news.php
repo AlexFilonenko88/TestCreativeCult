@@ -53,10 +53,6 @@ $this->setFrameMode(true);
     ),
     false
 );?>
-<?php
-global $arrFilter;
-var_dump($arrFilter);
-?>
 
 <?php
 $APPLICATION->IncludeComponent(
