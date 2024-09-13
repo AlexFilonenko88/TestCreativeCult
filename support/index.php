@@ -6,7 +6,9 @@ $APPLICATION->SetTitle("Поддержка");
 $APPLICATION->SetPageProperty("title", "");
 $APPLICATION->SetPageProperty("description", "");
 $APPLICATION->SetPageProperty("keywords", "");
-?><?$APPLICATION->IncludeComponent(
+?>
+
+<?php $APPLICATION->IncludeComponent(
 	"bitrix:main.include",
 	"banner",
 	Array(
@@ -18,7 +20,7 @@ $APPLICATION->SetPageProperty("keywords", "");
 		"TITLE" => "Материалы для скачивания"
 	)
 );?>
-<?$APPLICATION->IncludeComponent(
+<?php $APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
 	"support", 
 	array(
@@ -48,11 +50,11 @@ $APPLICATION->SetPageProperty("keywords", "");
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
 		"IBLOCK_ID" => "support",
-		"IBLOCK_TYPE" => "content",
+		"IBLOCK_TYPE" => "news",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
 		"INCLUDE_SUBSECTIONS" => "N",
 		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "1",
+		"NEWS_COUNT" => "5",
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -83,4 +85,6 @@ $APPLICATION->SetPageProperty("keywords", "");
 		"COMPONENT_TEMPLATE" => "support"
 	),
 	false
-);?><?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+);?>
+
+<?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
