@@ -22,6 +22,7 @@ Loader::includeModule('cult');
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/fancybox.js"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js"); ?>
+    <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/custom.js"); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
     <meta property="og:site_name" content="<?= $_SERVER['HTTP_HOST'] ?>">
     <meta property="og:title" content="<?php $APPLICATION->ShowTitle(); ?>">
