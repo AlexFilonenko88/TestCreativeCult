@@ -72,6 +72,7 @@ JCSmartFilter.prototype.reload = function (input) {
                 this.values2post(values),
                 BX.delegate(this.postHandler, this)
             );
+            console.log(70);
         }
     }
 };
@@ -129,6 +130,7 @@ JCSmartFilter.prototype.updateItem = function (PID, arItem) {
 };
 
 JCSmartFilter.prototype.postHandler = function (result, fromCache) {
+    console.log(result);
     var hrefFILTER, url, curProp;
     var modef = BX('modef');
     var modef_num = BX('modef_num');
@@ -156,6 +158,7 @@ JCSmartFilter.prototype.postHandler = function (result, fromCache) {
             }
 
             if (result.FILTER_AJAX_URL && result.COMPONENT_CONTAINER_ID) {
+                console.log(158);
                 BX.unbindAll(hrefFILTER[0]);
                 BX.bind(hrefFILTER[0], 'click', function (e) {
                     url = BX.util.htmlspecialcharsback(result.FILTER_AJAX_URL);
@@ -165,6 +168,7 @@ JCSmartFilter.prototype.postHandler = function (result, fromCache) {
             }
 
             if (result.INSTANT_RELOAD && result.COMPONENT_CONTAINER_ID) {
+                console.log(168);
                 url = BX.util.htmlspecialcharsback(result.FILTER_AJAX_URL);
                 BX.ajax.insertToNode(url, result.COMPONENT_CONTAINER_ID);
             } else {

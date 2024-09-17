@@ -718,6 +718,7 @@ $this->addExternalCss("/bitrix/css/main/font-awesome.css");
         </form>
     </div>
 </div>
+
 <script type="text/javascript">
     var smartFilter = new JCSmartFilter('<?echo CUtil::JSEscape($arResult["FORM_ACTION"])?>', '<?=CUtil::JSEscape($arParams["FILTER_VIEW_MODE"])?>', <?=CUtil::PhpToJSObject($arResult["JS_FILTER_PARAMS"])?>);
 </script>
@@ -746,7 +747,7 @@ $this->addExternalCss("/bitrix/css/main/font-awesome.css");
                               d="M1.03118 4.28243C1.40608 3.90586 2.01392 3.90586 2.38882 4.28243L8.75 10.672L15.1112 4.28243C15.4861 3.90586 16.0939 3.90586 16.4688 4.28243C16.8437 4.65901 16.8437 5.26956 16.4688 5.64614L9.42882 12.7176C9.05392 13.0941 8.44608 13.0941 8.07118 12.7176L1.03118 5.64614C0.656274 5.26956 0.656274 4.65901 1.03118 4.28243Z"
                               fill="currentColor"/>
                     </svg>
-                    <input type="text" name="service" readonly hidden class="select-input service-input">
+                    <input type="text" name="arrFilter_18" value="2225864208" readonly hidden class="select-input service-input">
                 </a>
                 <div class="select-drop">
                     <ul class="select-list">

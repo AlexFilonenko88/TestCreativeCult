@@ -18,11 +18,12 @@ Loader::includeModule('cult');
     <?php Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/main.css"); ?>
     <?php Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/fancy.css"); ?>
     <?php Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/aos.css"); ?>
+    <?php Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/custom.css"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/swiper.js"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/fancybox.js"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/aos.js"); ?>
     <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/main.js"); ?>
-    <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/custom.js"); ?>
+    <?php Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/custom.js?1"); ?>
     <title><?php $APPLICATION->ShowTitle(); ?></title>
     <meta property="og:site_name" content="<?= $_SERVER['HTTP_HOST'] ?>">
     <meta property="og:title" content="<?php $APPLICATION->ShowTitle(); ?>">

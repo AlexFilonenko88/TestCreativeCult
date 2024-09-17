@@ -5,6 +5,8 @@ selects && selects.forEach(select => {
     selectEvent(select);
 })
 
+console.log(selects);
+
 function selectEvent(select) {
     if (select.classList.contains('disabled')) {
         return false;
@@ -30,9 +32,10 @@ function selectEvent(select) {
         el.addEventListener('click', function (e) {
             e.preventDefault();
             selectText.innerText = el.innerText;
-            selectInput.value = 'Y';
+            selectInput.value = "2225864208";
             selectInput.name = el.dataset.controlName;
             select.classList.remove('active');
+            smartFilter.click(this);
         })
     })
 }
