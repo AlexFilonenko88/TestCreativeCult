@@ -1,6 +1,3 @@
-<?
+<?php
 $sSectionName = "Партнеры";
-$arDirProperties = Array(
-
-);
-?>
+$arDirProperties = array();

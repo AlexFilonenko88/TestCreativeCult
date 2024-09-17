@@ -1,230 +1,49 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+<?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+
+/** @global CMain $APPLICATION */
+
 $APPLICATION->SetTitle("Партнеры");
-?>
-<? $APPLICATION->IncludeComponent(
-    "bitrix:news.list",
-    "common_block",
+$APPLICATION->SetPageProperty("title", "");
+$APPLICATION->SetPageProperty("description", "");
+$APPLICATION->SetPageProperty("keywords", "");
+?><? $APPLICATION->IncludeComponent(
+    "bitrix:main.include",
+    "banner",
     array(
-        "ACTIVE_DATE_FORMAT" => "d.m.Y",
-        "ADD_SECTIONS_CHAIN" => "N",
-        "AJAX_MODE" => "N",
-        "AJAX_OPTION_ADDITIONAL" => "",
-        "AJAX_OPTION_HISTORY" => "N",
-        "AJAX_OPTION_JUMP" => "N",
-        "AJAX_OPTION_STYLE" => "Y",
-        "CACHE_FILTER" => "N",
-        "CACHE_GROUPS" => "Y",
-        "CACHE_TIME" => "36000000",
-        "CACHE_TYPE" => "A",
-        "CHECK_DATES" => "Y",
-        "COMPONENT_TEMPLATE" => "common_block",
-        "DETAIL_URL" => "",
-        "DISPLAY_BOTTOM_PAGER" => "Y",
-        "DISPLAY_DATE" => "N",
-        "DISPLAY_NAME" => "N",
-        "DISPLAY_PICTURE" => "N",
-        "DISPLAY_PREVIEW_TEXT" => "N",
-        "DISPLAY_TOP_PAGER" => "N",
-        "FIELD_CODE" => array(
-            0 => "",
-            1 => "",
-        ),
-        "FILTER_NAME" => "",
-        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-        "IBLOCK_ID" => "8",
-        "IBLOCK_TYPE" => "common_block",
-        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-        "INCLUDE_SUBSECTIONS" => "N",
-        "MESSAGE_404" => "",
-        "NEWS_COUNT" => "20",
-        "PAGER_BASE_LINK_ENABLE" => "N",
-        "PAGER_DESC_NUMBERING" => "N",
-        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-        "PAGER_SHOW_ALL" => "N",
-        "PAGER_SHOW_ALWAYS" => "N",
-        "PAGER_TEMPLATE" => ".default",
-        "PAGER_TITLE" => "Партнеры",
-        "PARENT_SECTION" => "",
-        "PARENT_SECTION_CODE" => "",
-        "PREVIEW_TRUNCATE_LEN" => "",
-        "PROPERTY_CODE" => array(
-            0 => "VIDEO",
-            1 => "HEADING",
-            2 => "PICTURE",
-            3 => "DESCRIPTION",
-            4 => "SECTION",
-            5 => "",
-        ),
-        "SET_BROWSER_TITLE" => "N",
-        "SET_LAST_MODIFIED" => "N",
-        "SET_META_DESCRIPTION" => "N",
-        "SET_META_KEYWORDS" => "N",
-        "SET_STATUS_404" => "N",
-        "SET_TITLE" => "N",
-        "SHOW_404" => "N",
-        "SORT_BY1" => "ACTIVE_FROM",
-        "SORT_BY2" => "SORT",
-        "SORT_ORDER1" => "DESC",
-        "SORT_ORDER2" => "ASC",
-        "STRICT_SECTION_CHECK" => "N"
-    ),
-    false
+        "AREA_FILE_SHOW" => "page",
+        "AREA_FILE_SUFFIX" => "banner",
+        "COMPONENT_TEMPLATE" => "banner",
+        "EDIT_TEMPLATE" => "",
+        "NAME" => "COSMO",
+        "TITLE" => "Партнеры"
+    )
 ); ?>
 
-    <div class="partners small-margin-top container">
-        <form class="contacts-form">
-            <div class="contacts-form-selects">
-                <div class="select">
-                    <a href class="select-head">
-                        <span class="select-head-text">Все услуги</span>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M1.03118 4.28243C1.40608 3.90586 2.01392 3.90586 2.38882 4.28243L8.75 10.672L15.1112 4.28243C15.4861 3.90586 16.0939 3.90586 16.4688 4.28243C16.8437 4.65901 16.8437 5.26956 16.4688 5.64614L9.42882 12.7176C9.05392 13.0941 8.44608 13.0941 8.07118 12.7176L1.03118 5.64614C0.656274 5.26956 0.656274 4.65901 1.03118 4.28243Z"
-                                  fill="currentColor"/>
-                        </svg>
-                        <input type="text" name="service" readonly hidden class="select-input">
-                    </a>
-                    <div class="select-drop">
-                        <ul class="select-list">
-                            <li class="select-item"><a href="#">Все услуги</a></li>
-                            <li class="select-item"><a href="#">Услуга 1</a></li>
-                            <li class="select-item"><a href="#">Услуга 2</a></li>
-                            <li class="select-item"><a href="#">Услуга 3</a></li>
-                            <li class="select-item"><a href="#">Услуга 4</a></li>
-                            <li class="select-item"><a href="#">Услуга 5</a></li>
-                            <li class="select-item"><a href="#">Услуга 6</a></li>
-                            <li class="select-item"><a href="#">Услуга 7 </a></li>
-                            <li class="select-item"><a href="#">Услуга 8</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="select">
-                    <a href class="select-head">
-                        <span class="select-head-text">Все страны</span>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M1.03118 4.28243C1.40608 3.90586 2.01392 3.90586 2.38882 4.28243L8.75 10.672L15.1112 4.28243C15.4861 3.90586 16.0939 3.90586 16.4688 4.28243C16.8437 4.65901 16.8437 5.26956 16.4688 5.64614L9.42882 12.7176C9.05392 13.0941 8.44608 13.0941 8.07118 12.7176L1.03118 5.64614C0.656274 5.26956 0.656274 4.65901 1.03118 4.28243Z"
-                                  fill="currentColor"/>
-                        </svg>
-                        <input type="text" name="country" readonly hidden class="select-input">
-                    </a>
-                    <div class="select-drop">
-                        <ul class="select-list">
-                            <li class="select-item"><a href="#">Все страны</a></li>
-                            <li class="select-item"><a href="#">Россия</a></li>
-                            <li class="select-item"><a href="#">Беларусь</a></li>
-                            <li class="select-item"><a href="#">Казахстан</a></li>
-                            <li class="select-item"><a href="#">Китай</a></li>
-                            <li class="select-item"><a href="#">Япония</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="select disabled">
-                    <a href class="select-head">
-                        <span class="select-head-text">Все регионы</span>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M1.03118 4.28243C1.40608 3.90586 2.01392 3.90586 2.38882 4.28243L8.75 10.672L15.1112 4.28243C15.4861 3.90586 16.0939 3.90586 16.4688 4.28243C16.8437 4.65901 16.8437 5.26956 16.4688 5.64614L9.42882 12.7176C9.05392 13.0941 8.44608 13.0941 8.07118 12.7176L1.03118 5.64614C0.656274 5.26956 0.656274 4.65901 1.03118 4.28243Z"
-                                  fill="currentColor"/>
-                        </svg>
-                        <input type="text" name="region" readonly hidden class="select-input">
-                    </a>
-                    <div class="select-drop">
-                        <ul class="select-list">
-                            <li class="select-item"><a href="#">Все регионы</a></li>
-                            <li class="select-item"><a href="#">Регион 1</a></li>
-                            <li class="select-item"><a href="#">Регион 2</a></li>
-                            <li class="select-item"><a href="#">Регион 3</a></li>
-                            <li class="select-item"><a href="#">Регион 4</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="select disabled">
-                    <a href class="select-head">
-                        <span class="select-head-text">Все города</span>
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M1.03118 4.28243C1.40608 3.90586 2.01392 3.90586 2.38882 4.28243L8.75 10.672L15.1112 4.28243C15.4861 3.90586 16.0939 3.90586 16.4688 4.28243C16.8437 4.65901 16.8437 5.26956 16.4688 5.64614L9.42882 12.7176C9.05392 13.0941 8.44608 13.0941 8.07118 12.7176L1.03118 5.64614C0.656274 5.26956 0.656274 4.65901 1.03118 4.28243Z"
-                                  fill="currentColor"/>
-                        </svg>
-                        <input type="text" name="city" readonly hidden class="select-input">
-                    </a>
-                    <div class="select-drop">
-                        <ul class="select-list">
-                            <li class="select-item"><a href="#">Все города</a></li>
-                            <li class="select-item"><a href="#">Краснодар</a></li>
-                            <li class="select-item"><a href="#">Москва</a></li>
-                            <li class="select-item"><a href="#">Санкт-петербург</a></li>
-                            <li class="select-item"><a href="#">Екатеринбург</a></li>
-                            <li class="select-item"><a href="#">Нижний новгород</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="contacts-form-btns">
-                <button type="submit" class="contacts-form-btn btn-primary">ПОКАЗАТЬ</button>
-                <input type="button" value="СБРОС" class="contacts-form-clear">
-            </div>
-        </form>
-
-        <? $APPLICATION->IncludeComponent(
-            "bitrix:news.list",
-            "custom_partner",
-            array(
-                "ACTIVE_DATE_FORMAT" => "d.m.Y",
-                "ADD_SECTIONS_CHAIN" => "N",
-                "AJAX_MODE" => "N",
-                "AJAX_OPTION_ADDITIONAL" => "",
-                "AJAX_OPTION_HISTORY" => "N",
-                "AJAX_OPTION_JUMP" => "N",
-                "AJAX_OPTION_STYLE" => "Y",
-                "CACHE_FILTER" => "N",
-                "CACHE_GROUPS" => "Y",
-                "CACHE_TIME" => "36000000",
-                "CACHE_TYPE" => "A",
-                "CHECK_DATES" => "Y",
-                "COMPONENT_TEMPLATE" => "custom_partner",
-                "DETAIL_URL" => "",
-                "DISPLAY_BOTTOM_PAGER" => "Y",
-                "DISPLAY_DATE" => "Y",
-                "DISPLAY_NAME" => "Y",
-                "DISPLAY_PICTURE" => "Y",
-                "DISPLAY_PREVIEW_TEXT" => "Y",
-                "DISPLAY_TOP_PAGER" => "N",
-                "FIELD_CODE" => array(0 => "", 1 => "",),
-                "FILTER_NAME" => "",
-                "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-                "IBLOCK_ID" => "5",
-                "IBLOCK_TYPE" => "partners",
-                "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-                "INCLUDE_SUBSECTIONS" => "Y",
-                "MESSAGE_404" => "",
-                "NEWS_COUNT" => "20",
-                "PAGER_BASE_LINK_ENABLE" => "N",
-                "PAGER_DESC_NUMBERING" => "N",
-                "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-                "PAGER_SHOW_ALL" => "N",
-                "PAGER_SHOW_ALWAYS" => "N",
-                "PAGER_TEMPLATE" => ".default",
-                "PAGER_TITLE" => "Новости",
-                "PARENT_SECTION" => "",
-                "PARENT_SECTION_CODE" => "",
-                "PREVIEW_TRUNCATE_LEN" => "",
-                "PROPERTY_CODE" => array(0 => "ADDRESS", 1 => "NAME_COMPANY", 2 => "LINK_PATH", 3 => "TELEPHONE", 4 => "EMAIL", 5 => "",),
-                "SET_BROWSER_TITLE" => "Y",
-                "SET_LAST_MODIFIED" => "N",
-                "SET_META_DESCRIPTION" => "N",
-                "SET_META_KEYWORDS" => "N",
-                "SET_STATUS_404" => "N",
-                "SET_TITLE" => "N",
-                "SHOW_404" => "N",
-                "SORT_BY1" => "ACTIVE_FROM",
-                "SORT_BY2" => "SORT",
-                "SORT_ORDER1" => "DESC",
-                "SORT_ORDER2" => "ASC",
-                "STRICT_SECTION_CHECK" => "N"
-            )
-        ); ?>
-    </div>
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+<? $APPLICATION->IncludeComponent("bitrix:catalog.smart.filter", "partners_smart_filter", array(
+    "CACHE_GROUPS" => "Y",    // Учитывать права доступа
+    "CACHE_TIME" => "36000000",    // Время кеширования (сек.)
+    "CACHE_TYPE" => "A",    // Тип кеширования
+    "DISPLAY_ELEMENT_COUNT" => "N",    // Показывать количество
+    "FILTER_NAME" => "arrFilter",    // Имя выходящего массива для фильтрации
+    "FILTER_VIEW_MODE" => "horizontal",    // Вид отображения
+    "IBLOCK_ID" => "5",    // Инфоблок
+    "IBLOCK_TYPE" => "partners",    // Тип инфоблока
+    "PAGER_PARAMS_NAME" => "arrPager",    // Имя массива с переменными для построения ссылок в постраничной навигации
+    "POPUP_POSITION" => "left",
+    "PREFILTER_NAME" => "smartPreFilter",    // Имя входящего массива для дополнительной фильтрации элементов
+    "SAVE_IN_SESSION" => "N",    // Сохранять установки фильтра в сессии пользователя
+    "SECTION_CODE" => "",    // Код раздела
+    "SECTION_CODE_PATH" => "",
+    "SECTION_DESCRIPTION" => "-",    // Описание
+    "SECTION_ID" => "",    // ID раздела инфоблока
+    "SECTION_TITLE" => "-",    // Заголовок
+    "SEF_MODE" => "N",    // Включить поддержку ЧПУ
+    "SEF_RULE" => "",    // Правило для обработки
+    "SMART_FILTER_PATH" => "",
+    "TEMPLATE_THEME" => "blue",    // Цветовая тема
+    "XML_EXPORT" => "N",    // Включить поддержку Яндекс Островов
+    "AJAX_MODE" => "Y"
+),
+    false
+); ?>
+<?php require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

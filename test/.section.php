@@ -1,6 +1,3 @@
-<?
-$sSectionName = "Test";
-$arDirProperties = Array(
-
-);
-?>
+<?php
+$sSectionName = "Test Page";
+$arDirProperties = array();

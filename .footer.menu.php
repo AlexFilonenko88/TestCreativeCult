@@ -1,0 +1,39 @@
+<?php
+$aMenuLinks = array(
+
+    array(
+        "О компании",
+        "/about/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Новости",
+        "",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Поддержка",
+        "/support/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Продукция",
+        "#",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Контакты",
+        "/contacts/",
+        array(),
+        array(),
+        ""
+    ),
+);

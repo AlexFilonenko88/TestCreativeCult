@@ -1,6 +1,3 @@
-<?
+<?php
 $sSectionName = "Поддержка";
-$arDirProperties = Array(
-
-);
-?>
+$arDirProperties = array();
